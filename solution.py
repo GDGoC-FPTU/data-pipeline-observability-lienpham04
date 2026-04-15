@@ -2,7 +2,7 @@
 ==============================================================
 Day 10 Lab: Build Your First Automated ETL Pipeline
 ==============================================================
-Student ID: AI20K-260  (<-- Thay XXXX bang ma so cua ban)
+Student ID: AI20K-2A202600260  (<-- Thay XXXX bang ma so cua ban)
 Name: Phạm Hoàng Kim Liên
 
 Nhiem vu:
