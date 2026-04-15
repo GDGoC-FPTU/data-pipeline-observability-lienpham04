@@ -8,40 +8,14 @@
 
 ## Mo ta
 
-(Mo ta ngan gon bai lab va nhung gi ban da lam)
-
----
-
-## Cach chay (How to Run)
-
-### Prerequisites
-```bash
-pip install pandas
-```
-
-### Chay ETL Pipeline
-```bash
-python solution.py
-```
-
-### Chay Agent Simulation (Stress Test)
-```bash
-# Mo ta cach ban chay thi nghiem Clean vs Garbage data
-```
-
----
-
-## Cau truc thu muc
-
-```
-├── solution.py              # ETL Pipeline script
-├── processed_data.csv       # Output cua pipeline
-├── experiment_report.md     # Bao cao thi nghiem
-└── README.md                # File nay
-```
-
----
+Bài lab này xây dựng một pipeline ETL tự động để xử lý dữ liệu sản phẩm từ file JSON. Pipeline bao gồm các bước: Extract (đọc dữ liệu), Validate (loại bỏ dữ liệu không hợp lệ), Transform (chuẩn hóa và tính giá giảm 10%), và Load (lưu ra CSV). Ngoài ra, lab còn thực hiện thí nghiệm so sánh hiệu suất của AI agent khi sử dụng dữ liệu sạch vs dữ liệu rác để chứng minh tầm quan trọng của chất lượng dữ liệu trong hệ thống AI.
 
 ## Ket qua
 
-(Tom tat ket qua: bao nhieu records da xu ly, bao nhieu bi loai, v.v.)
+Pipeline đã xử lý thành công 5 records từ raw_data.json, trong đó:
+- 3 records hợp lệ được lưu vào processed_data.csv
+- 2 records bị loại bỏ (1 record có giá âm, 1 record có category rỗng)
+
+Thí nghiệm agent simulation cho thấy:
+- Với dữ liệu sạch: Agent đưa ra quyết định chính xác (điểm 10/10)
+- Với dữ liệu rác: Agent bị ảnh hưởng bởi outliers và đưa ra quyết định sai lệch (điểm 2/10)
